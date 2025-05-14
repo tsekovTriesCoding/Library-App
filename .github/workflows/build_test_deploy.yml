@@ -42,6 +42,7 @@ jobs:
       with:
         service_id: ${{ secrets.BACKEND_KEY }}
         api_key: ${{secrets.RENDER_API_KEY}}
+        wait-deploy: true
 
   deploy-fe:
     runs-on: ubuntu-latest
@@ -54,3 +55,4 @@ jobs:
       with:
         service_id: ${{ secrets.FRONTEND_KEY }}
         api_key: ${{secrets.RENDER_API_KEY}}
+        wait-deploy: true
