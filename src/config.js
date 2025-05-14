@@ -1,0 +1,1 @@
+export const settings = {host: "https://library-app-eizd.onrender.com"}
